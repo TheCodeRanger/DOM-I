@@ -79,10 +79,20 @@ const middleText = document.querySelectorAll(".main-content .text-content p");
 middleText[0].textContent = siteContent["main-content"]["features-content"];
 middleText[1].textContent = siteContent["main-content"]["about-content"];
 middleText[2].textContent = siteContent["main-content"]["services-content"];
-middleText[3].textContent = siteContent["main-content"]["services-content"];
-middleText[4].textContent = siteContent["main-content"]["product-content"];
-middleText[5].textContent = siteContent["main-content"]["vision-content"];
+middleText[3].textContent = siteContent["main-content"]["product-content"];
+middleText[4].textContent = siteContent["main-content"]["vision-content"];
 
-
-
-
+//---- Footer ----
+//Contact
+const contact = document.querySelector(".contact");
+const contactH4 = contact.querySelectorAll("h4");
+const contactText = contact.querySelectorAll(".contact p")
+//Title
+contactH4[0].textContent = siteContent["contact"]["contact-h4"];
+//Text
+contactText[0].textContent = siteContent["contact"]["address"];
+contactText[1].textContent = siteContent["contact"]["phone"];
+contactText[2].textContent = siteContent["contact"]["email"];
+//Copy
+const footah = document.querySelector("footer");
+footah.textContent = siteContent["footer"]["copyright"];
