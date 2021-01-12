@@ -76,5 +76,13 @@ middleTitle[3].textContent = siteContent["main-content"]["product-h4"];
 middleTitle[4].textContent = siteContent["main-content"]["vision-h4"];
 //Text
 const middleText = document.querySelectorAll(".main-content .text-content p");
-middleTitle[0].textContent = siteContent["main-content"]["features-content"];
+middleText[0].textContent = siteContent["main-content"]["features-content"];
+middleText[1].textContent = siteContent["main-content"]["about-content"];
+middleText[2].textContent = siteContent["main-content"]["services-content"];
+middleText[3].textContent = siteContent["main-content"]["services-content"];
+middleText[4].textContent = siteContent["main-content"]["product-content"];
+middleText[5].textContent = siteContent["main-content"]["vision-content"];
+
+
+
 
