@@ -40,3 +40,65 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//---- Nav Bar ----
+const navLink = document.querySelectorAll("nav a");
+// console.log(navLink);
+navLink[0].innerHTML = siteContent["nav"]["nav-item-1"];
+navLink[1].innerHTML = siteContent["nav"]["nav-item-2"];
+navLink[2].innerHTML = siteContent["nav"]["nav-item-3"];
+navLink[3].innerHTML = siteContent["nav"]["nav-item-4"];
+navLink[4].innerHTML = siteContent["nav"]["nav-item-5"];
+navLink[5].innerHTML = siteContent["nav"]["nav-item-6"];
+navLink.forEach(ele => (ele.style.color = "green"));
+
+const newLink = document.createElement("a");
+newLink.textContent = "Sauce";
+document.querySelector("nav").appendChild(newLink);
+newLink.style.color = "green";
+
+//---- Header/CTA ----
+//Images
+const headerImg = document.querySelector("#cta-img");
+headerImg.src = "img/header-img.png";
+//Content
+const cta = document.querySelector(".cta");
+const ctaH1 = document.querySelector("h1");
+const ctaBtn = document.querySelector("button")
+
+ctaH1.textContent = siteContent["cta"]["h1"];
+ctaBtn.textContent = siteContent["cta"]["button"];
+
+//---- Body ----
+//Images
+const middleImg = document.querySelector(".middle-img");
+middleImg.src = "img/mid-page-accent.jpg";
+//Titles
+const middleTitle = document.querySelectorAll(".main-content .text-content h4");
+middleTitle[0].textContent = siteContent["main-content"]["features-h4"];
+middleTitle[1].textContent = siteContent["main-content"]["about-h4"];
+middleTitle[2].textContent = siteContent["main-content"]["services-h4"];
+middleTitle[3].textContent = siteContent["main-content"]["product-h4"];
+middleTitle[4].textContent = siteContent["main-content"]["vision-h4"];
+//Text
+const middleText = document.querySelectorAll(".main-content .text-content p");
+middleText[0].textContent = siteContent["main-content"]["features-content"];
+middleText[1].textContent = siteContent["main-content"]["about-content"];
+middleText[2].textContent = siteContent["main-content"]["services-content"];
+middleText[3].textContent = siteContent["main-content"]["product-content"];
+middleText[4].textContent = siteContent["main-content"]["vision-content"];
+
+//---- Footer ----
+//Contact
+const contact = document.querySelector(".contact");
+const contactH4 = contact.querySelectorAll("h4");
+const contactText = contact.querySelectorAll(".contact p")
+//Title
+contactH4[0].textContent = siteContent["contact"]["contact-h4"];
+//Text
+contactText[0].textContent = siteContent["contact"]["address"];
+contactText[1].textContent = siteContent["contact"]["phone"];
+contactText[2].textContent = siteContent["contact"]["email"];
+//Copy
+const footah = document.querySelector("footer");
+footah.textContent = siteContent["footer"]["copyright"];
