@@ -63,3 +63,9 @@ const ctaBtn = document.querySelector("button")
 ctaH1.textContent = siteContent["cta"]["h1"];
 ctaBtn.textContent = siteContent["cta"]["button"];
 
+//---- Body ----
+const middleImage = document.querySelector(".middle-img");
+middleImage.src = "img/mid-page-accent.jpg";
+
+const middle = document.querySelector(".main-content");
+const middleTitle = document.querySelectorAll("h4");
