@@ -64,8 +64,17 @@ ctaH1.textContent = siteContent["cta"]["h1"];
 ctaBtn.textContent = siteContent["cta"]["button"];
 
 //---- Body ----
-const middleImage = document.querySelector(".middle-img");
-middleImage.src = "img/mid-page-accent.jpg";
+//Images
+const middleImg = document.querySelector(".middle-img");
+middleImg.src = "img/mid-page-accent.jpg";
+//Titles
+const middleTitle = document.querySelectorAll(".main-content .text-content h4");
+middleTitle[0].textContent = siteContent["main-content"]["features-h4"];
+middleTitle[1].textContent = siteContent["main-content"]["about-h4"];
+middleTitle[2].textContent = siteContent["main-content"]["services-h4"];
+middleTitle[3].textContent = siteContent["main-content"]["product-h4"];
+middleTitle[4].textContent = siteContent["main-content"]["vision-h4"];
+//Text
+const middleText = document.querySelectorAll(".main-content .text-content p");
+middleTitle[0].textContent = siteContent["main-content"]["features-content"];
 
-const middle = document.querySelector(".main-content");
-const middleTitle = document.querySelectorAll("h4");
