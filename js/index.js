@@ -50,6 +50,12 @@ navLink[2].innerHTML = siteContent["nav"]["nav-item-3"];
 navLink[3].innerHTML = siteContent["nav"]["nav-item-4"];
 navLink[4].innerHTML = siteContent["nav"]["nav-item-5"];
 navLink[5].innerHTML = siteContent["nav"]["nav-item-6"];
+navLink.forEach(ele => (ele.style.color = "green"));
+
+const newLink = document.createElement("a");
+newLink.textContent = "Sauce";
+document.querySelector("nav").appendChild(newLink);
+newLink.style.color = "green";
 
 //---- Header/CTA ----
 //Images
